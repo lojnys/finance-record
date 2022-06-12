@@ -18,3 +18,5 @@
 - [x] Write a main function that runs while repeat is true.
 - [x] Write a function to punch in the number and calculate. (needs reading the file)
 - [x] Write a function that makes a new account (with an accountlist)
+
+**note: the obstacle I faced and need to work on is to solve how to retrieve the previous total**
