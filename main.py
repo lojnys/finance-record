@@ -59,6 +59,23 @@ def update(cad, name):
     
     return print(ending)
 
+def retrieve_transaction(name, filter=None):                                   # attempted to filter transactions by given month     //////// NOT WORKING/////////////////
+
+    # if found(name) and not(filter == None):
+
+    #     with open(path_to_csv+f"{name}.csv", 'r') as file:
+    #         csv_reader = csv.reader(file)
+    #         for transaction in csv_reader:
+    #             print(transaction)
+
+    
+    # else:
+
+    #     ending = "You do not have "
+
+    return 0
+
+
 def make_account(cad, name):
 
     csv_path = path_to_csv + f"{name}.csv"
@@ -100,12 +117,28 @@ def main():
 
             repeat = False
         
+        elif option == "Transactions":
+
+            account_name = pyip.inputStr("What is the account name? ", blank=False)
+            date_filter = pyip.inputStr("Do you have a specific month that you want to look at? (enter if none) ", blank=True)
+
+            if date_filter == "":
+
+                retrieve_transaction(account_name)
+
+            else:
+
+                date_month = datetime.strptime(date_filter, "%B").month
+                retrieve_transaction(account_name, date_month)
+
         elif option == 'Make an account':
 
             name = input('Please provide the name of your account ')
             beginning_balance = pyip.inputNum("What is your beginning balance? ")
 
             make_account(beginning_balance, name)
+
+            repeat = False
     return 0
 
 
