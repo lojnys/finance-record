@@ -22,7 +22,7 @@
 **note: the obstacle I faced and need to work on is to solve how to retrieve the previous total**
 
 *06/12/22*
-- [] Write a function that retrieves transaction record
+- [ ] Write a function that retrieves transaction record
 
 **note: I was not able to apply the filter, in which the program takes in a month in string then output the transactions in that month**
 **note: I should first access the overall transactions, then move on to filtering**
