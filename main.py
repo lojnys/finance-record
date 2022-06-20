@@ -29,11 +29,11 @@ def update(cad, name):
 
         csv_file = path_to_csv + f"{name}.csv"
 
-        with open(csv_file, 'a+') as file:
+        with open(csv_file, 'r+') as file:
 
-            prev_reader = csv.reader(file)
-            prev_total = prev_reader[len(prev_reader)-1][4]        # getting the previous total  /////// NOT WORKING ///// test: make an account and test it by adding/subtracting from beginning balance
-
+            prev_reader = [x for x in csv.reader(file)]
+            prev_total = float(prev_reader[len(prev_reader)-2][4])        # getting the previous total  /////// NOT WORKING ///// test: make an account and test it by adding/subtracting from beginning balance
+            # print(prev_total)
 
             category = input("What was this for? (category) ")
             date = pyip.inputDate("Please provide the date (ex. 06/10/2022) ")
