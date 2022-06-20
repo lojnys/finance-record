@@ -26,3 +26,7 @@
 
 **note: I was not able to apply the filter, in which the program takes in a month in string then output the transactions in that month**
 **note: I should first access the overall transactions, then move on to filtering**
+
+*06/19/2022*
+- [x] Fix error 1: error in retrieving the previous total amount
+- [ ] Fix error 2: error in retrieving the transaction (addtion. by filter)
