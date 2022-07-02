@@ -12,6 +12,10 @@
 2. The record will take other informations (date, category, where spent, etc)
 3. The financial statement will be recorded on a csv. (Just in case of an error, find a way to make a copy)
 
+[x] Simple functionalities of updating, retrieving, creating accounts
+[ ] With the given data, graphs to show the average spendings/income
+[ ] GUI
+
 ## Daily Logs
 
 *06/11/22*
@@ -30,3 +34,9 @@
 *06/19/2022*
 - [x] Fix error 1: error in retrieving the previous total amount.
 - [ ] Fix error 2: error in retrieving the transaction (addtion. by filter).
+
+*07/01/22*
+- [x] Fix error 2: error in retrieving the transaction by filter.
+- [x] Finished 3 basic options (creating accounts, updating the account, retrieving the transaction history)
+- [ ] Addition. Retrieving transaction history by putt
+
