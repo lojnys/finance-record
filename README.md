@@ -12,9 +12,9 @@
 2. The record will take other informations (date, category, where spent, etc)
 3. The financial statement will be recorded on a csv. (Just in case of an error, find a way to make a copy)
 
-[x] Simple functionalities of updating, retrieving, creating accounts
-[ ] With the given data, graphs to show the average spendings/income
-[ ] GUI
+- [x] Simple functionalities of updating, retrieving, creating accounts
+- [ ] With the given data, graphs to show the average spendings/income
+- [ ] GUI
 
 ## Daily Logs
 
